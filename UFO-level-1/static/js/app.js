@@ -9,6 +9,8 @@ button.on("click",runEnter);
 form.on("submit",runEnter);
 
 function runEnter(){
+    var bodyrows = d3.selectAll("td");
+    bodyrows.remove();
     d3.event.preventDefault();
     var userinput = d3.select("#datetime");
     var inputvalues = userinput.property("value");
@@ -18,6 +20,9 @@ function runEnter(){
         Object.entries(thelot).forEach(function([key,value]){
             var insert = row.append("td");
             insert.text(value);
+            
         });
+    
     });
+    
 };
