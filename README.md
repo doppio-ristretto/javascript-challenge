@@ -1,1 +1,3 @@
-# Simple project to get to know Javascript.  It features an interactive UFO sightings list.
+# UFO Javascript project
+Simple project to get to know Javascript.  It features an interactive UFO sightings list.
+
